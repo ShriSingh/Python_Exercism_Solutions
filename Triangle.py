@@ -5,7 +5,7 @@ def equilateral(sides):
     # Checking if the sides are a triangle through the triangle_check()
     checking_shape = triangle_check(sides)
     # Checking the output of the function
-    if checking_shape != True:
+    if checking_shape is not True:
         # If the shape is not a triangle, then it cannot be a equilateral triangle
         return False
         
@@ -27,7 +27,7 @@ def isosceles(sides):
     # Checking if the sides are a triangle through the triangle_check()
     checking_shape = triangle_check(sides)
     # Checking the output of the function
-    if checking_shape != True:
+    if checking_shape is not True:
         # If the shape is not a triangle, then it cannot be an isosceles triangle
         return False
         
@@ -49,7 +49,7 @@ def scalene(sides):
     # Checking if the sides are a triangle through the triangle_check()
     checking_shape = triangle_check(sides)
     # Checking the output of the function
-    if checking_shape != True:
+    if checking_shape is not True:
         # If the shape is not a triangle, then it cannot be a scalene triangle
         return False
         
