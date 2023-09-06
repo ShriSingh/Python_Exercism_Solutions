@@ -8,14 +8,14 @@ def equilateral(sides):
     if checking_shape is not True:
         # If the shape is not a triangle, then it cannot be a equilateral triangle
         return False
-        
+
     # Assigning the sides of the shape to a variable
-    a = sides[0]
-    b = sides[1]
-    c = sides[2]
+    side_a = sides[0]
+    side_b = sides[1]
+    side_c = sides[2]
 
     # Checking the sides against the requirements of an equilateral triangle
-    equilateral_check = a == b == c
+    equilateral_check = side_a == side_b == side_c
     # Returning the boolean value after checking the sides
     return equilateral_check
 
@@ -30,14 +30,14 @@ def isosceles(sides):
     if checking_shape is not True:
         # If the shape is not a triangle, then it cannot be an isosceles triangle
         return False
-        
+
     # Assigning the sides of the shape to a variable
-    a = sides[0]
-    b = sides[1]
-    c = sides[2]
+    side_a = sides[0]
+    side_b = sides[1]
+    side_c = sides[2]
 
     # Checking the sides against the requirements of an isosceles triangle
-    isosceles_check = a == b or b == c or a == c
+    isosceles_check = side_a == side_b or side_b == side_c or side_a == side_c
     # Returning the boolean value after checking the sides
     return isosceles_check
 
@@ -52,16 +52,17 @@ def scalene(sides):
     if checking_shape is not True:
         # If the shape is not a triangle, then it cannot be a scalene triangle
         return False
-        
+
     # Assigning the sides of the shape to a variable
-    a = sides[0]
-    b = sides[1]
-    c = sides[2]
+    side_a = sides[0]
+    side_b = sides[1]
+    side_c = sides[2]
 
     # Checking the sides against the requirements of a scalene triangle
-    scalene_check = a != b and b != c and a != c
+    scalene_check = side_a != side_b and side_b != side_c and side_a != side_c
     # Returning the boolean value after checking the sides
     return scalene_check
+
 
 def triangle_check(sides):
     """
@@ -73,17 +74,16 @@ def triangle_check(sides):
         if side <= 0:
             # If the condition is met, return false
             return False
-            
+
     # Assigning the sides of the shape to a variable
-    a = sides[0]
-    b = sides[1]
-    c = sides[2]
+    side_a = sides[0]
+    side_b = sides[1]
+    side_c = sides[2]
 
     # Checking the sides against the expressions
-    if a + b >= c and b + c >= a and a + c >= b:
+    if side_a + side_b >= side_c and side_b + side_c >= side_a and side_a + side_c >= side_b:
         # Returning true if the expressions are true
         return True
-        
+
     # Returning the default response
     return False
-            
