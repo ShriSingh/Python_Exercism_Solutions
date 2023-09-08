@@ -1,7 +1,6 @@
-
 def convert(number):
     '''
-    Solving the problem by solely using conditional statements
+    Solving the function using solely conditional statements
     '''
     # Checking if the number is divisible by 3, 5, and 7
     if number % 3 == 0 and number % 5 == 0 and number % 7 == 0:
@@ -20,4 +19,3 @@ def convert(number):
         return "Plong"
     # Returns the number in a string form if it's not divisible by 3, 5, nor 7
     return str(number)
-
